@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Blogy - Sign Up</title>
+  <meta name="title" content="Blogy - Hey, we’re Blogy. See our thoughts, stories and ideas.">
+  <meta name="description" content="This is a blog html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/register/login.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="go-back-container">
+        <a href="../index.html" class="back" id="goBackButton"><ion-icon name="arrow-back-outline"></ion-icon> Back</a>
+    </div>
+    <div class="container">
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode">
+        </div>
+        <h2>Sign Up</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Username</label>
+                <input type="username" id="username" name="Username" placeholder="Enter your Username" required>
+                <span class="icon"></span>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                <span class="icon"></span>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                <span class="icon"></span>
+                <span class="icon password-icon"></span>
+            </div>
+            <div class="options">
+            </div>
+            <button class="login-button" type="submit">Sign up</button>
+            <div class="or-divider">Or With</div>
+            <div class="button-group">
+                <button type="button"><img src="https://www.google.com/favicon.ico" alt="Google">Google</button>
+                <button type="button"><img src="https://developer.apple.com/favicon.ico" alt="Apple">Apple</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../assets/js/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

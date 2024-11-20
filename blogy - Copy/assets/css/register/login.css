@@ -1,0 +1,223 @@
+
+/*-----------------------------------*\
+  #LOGIN FORM
+\*-----------------------------------*/
+
+body {
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fffefe;
+    margin: 0;
+}
+.container {
+    user-select: none;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+h2 {
+    user-select: none;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+    color: black;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000000;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+.input-group input:focus {
+    border-color: #151515;
+    outline: none;
+}
+.input-group .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    font-size: 16px;
+    color: #000000;
+}
+.input-group .password-icon {
+    right: 12px;
+    left: auto;
+    cursor: pointer;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.options a {
+    color: #4285F4;
+    text-decoration: none;
+    font-size: 14px;
+}
+.options a:hover {
+    text-decoration: underline;
+}
+.options input[type="checkbox"] {
+    margin-right: 8px;
+}
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+.login-button:hover {
+    background-color: #555;
+}
+.sign-up-link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sign-up-link a {
+    color: #4285F4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.sign-up-link a:hover {
+    color: #000;
+}
+.or-divider {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+.button-group button {
+    width: 48%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.button-group button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.button-group button:hover {
+    background-color: #f0f0f0;
+}
+.dark-mode-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.dark-mode-toggle input {
+    display: none;
+}
+.dark-mode-toggle .slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+.dark-mode-toggle .slider::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+.dark-mode-toggle input:checked + .slider {
+    background-color: #333;
+}
+.dark-mode-toggle input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+/*-----------------------------------*\
+  #GO BACK
+\*-----------------------------------*/
+
+.go-back-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#goBackButton {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#goBackButton ion-icon {
+    margin-right: 8px; /* Adjust the spacing between the icon and the text as needed */
+}
+
+#goBackButton:hover {
+    color: rgb(44, 44, 44);
+}
+
+.back {
+    color: black;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+}
